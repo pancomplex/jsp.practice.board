@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+main {
+  min-height: 60vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+#header {
+  .container {
+    background: #fff;
+    color: #4bbdae;
+    border-bottom: #4bbdae;
+    display: flex;
+    justify-content: space-between; // main-axis
+    align-items: center;
+    padding: 50px; //상하좌우 전부 50px;
+    nav {
+      ul {
+        display: flex;
+        li {
+          a {
+            display: block;
+            padding: 0 20px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+#footer {
+  background: #4bbdae;
+  color: #fff;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.write_title,
+.list_title {
+  color: #4bbdae;
+  text-align: center;
+  margin: 20px auto;
+}
+//form  관련
+
+table {
+  border: none;
+  border-collapse: collapse;
+  border-top: 1px solid #4bbdae;
+  width: 100%;
+}
+.form {
+  &.wide {
+    width: 1200px;
+  }
+  width: 800px;
+  margin: 0 auto;
+  table {
+    &.tdLeft {
+      td {
+        text-align: left;
+      }
+    }
+  }
+  tbody {
+    td {
+      text-align: center;
+      &.left {
+        text-align: left;
+      }
+    }
+  }
+  thead th {
+    background-color: #f8f8f8;
+  }
+  td,
+  th {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #4bbdae;
+  }
+  th {
+    background-color: #4bbdae;
+    color: #fff;
+    font-weight: 400;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+    min-width: 500px;
+  }
+  textarea {
+    min-height: 250px;
+    resize: none;
+  }
+
+  td span {
+    margin-left: 10px;
+  }
+  td div {
+    margin: 5px 0;
+  }
+  .short {
+    width: 150px;
+    min-width: 150px !important;
+  }
+}
+
+#contents {
+  table {
+    border: none;
+    border-collapse: collapse;
+    border-top: 1px solid #4bbdae;
+    width: 100%;
+  }
+  tr:hover {
+    background-color: #4bbdae;
+    color: #fff;
+  }
+  th {
+    background-color: #4bbdae;
+    color: #fff;
+  }
+}
+
+.btns {
+  display: flex;
+
+  gap: 10px;
+}
+.btns.center {
+  justify-content: center;
+}
+.btns.right {
+  justify-content: right;
+}
+
+.btns a,
+input[type="submit"],
+input[type="button"] {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4bbdae;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}

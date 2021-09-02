@@ -1,0 +1,61 @@
+* { margin: 0; padding: 0; }
+
+body { font-family: "IBM Plex Sans KR", sans-serif; }
+
+main { min-height: 60vh; }
+
+a { text-decoration: none; color: inherit; }
+
+li { list-style: none; }
+
+#header .container { background: #fff; color: #4bbdae; border-bottom: #4bbdae; display: flex; justify-content: space-between; align-items: center; padding: 50px; }
+
+#header .container nav ul { display: flex; }
+
+#header .container nav ul li a { display: block; padding: 0 20px; font-size: 18px; }
+
+#footer { background: #4bbdae; color: #fff; padding: 50px 0; display: flex; justify-content: center; text-transform: uppercase; }
+
+.write_title, .list_title { color: #4bbdae; text-align: center; margin: 20px auto; }
+
+table { border: none; border-collapse: collapse; border-top: 1px solid #4bbdae; width: 100%; }
+
+.form { width: 800px; margin: 0 auto; }
+
+.form.wide { width: 1200px; }
+
+.form table.tdLeft td { text-align: left; }
+
+.form tbody td { text-align: center; }
+
+.form tbody td.left { text-align: left; }
+
+.form thead th { background-color: #f8f8f8; }
+
+.form td, .form th { padding: 10px; border: none; border-bottom: 1px solid #4bbdae; }
+
+.form th { background-color: #4bbdae; color: #fff; font-weight: 400; }
+
+.form input[type="text"], .form input[type="password"], .form input[type="email"], .form input[type="number"], .form select, .form textarea { border: 1px solid #d9d9d9; padding: 10px; min-width: 500px; }
+
+.form textarea { min-height: 250px; resize: none; }
+
+.form td span { margin-left: 10px; }
+
+.form td div { margin: 5px 0; }
+
+.form .short { width: 150px; min-width: 150px !important; }
+
+#contents table { border: none; border-collapse: collapse; border-top: 1px solid #4bbdae; width: 100%; }
+
+#contents tr:hover { background-color: #4bbdae; color: #fff; }
+
+#contents th { background-color: #4bbdae; color: #fff; }
+
+.btns { display: flex; gap: 10px; }
+
+.btns.center { justify-content: center; }
+
+.btns.right { justify-content: right; }
+
+.btns a, input[type="submit"], input[type="button"] { width: 150px; height: 40px; display: flex; justify-content: center; align-items: center; background: #4bbdae; color: #fff; border-radius: 10px; border: none; cursor: pointer; }
